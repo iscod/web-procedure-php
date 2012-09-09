@@ -1,0 +1,22 @@
+     <!--end changeable content.-->
+        </div><!--end leftcontent tag-->
+        <div id="rightcontent">
+            <h1>Navigation</h1>
+            <p><a href="index.php">Home</a><!--主页--></p>
+            <p><a href="albums.php">Discography</a><!--目录--></p>
+            <p><a href="login.php">Login</a><!--登陆--></p>
+            <p><a href="register.php">Register</a><!--注册--></p>
+            <p><a href="customize.php">Customize</a><!----></p>
+            <p>
+                <em>
+                <?php //print the current date and time: 
+                //set the timezone:
+                date_default_timezone_set('Asia/Shanghai'); 
+                print date('Y年n月j号G:i'); ?>
+                </em>
+            </p>
+        </div><!--end rightcontent tag-->
+    </body>
+</html>
+<?php /*end the buffer to the browser and turn off buffering*/
+ob_end_flush();?>

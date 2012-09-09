@@ -1,0 +1,53 @@
+<?php /*trun on output buffering 输出缓存*/
+    ob_start();
+?>
+<!DOCTYPE html PUBLIC "-W3C//DTD XTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xtml" xml:lang="en" lang="en">
+    <head>
+        <meta http_equiv="Content-type" content="text/html" charset="utf-8"/>
+        <title>
+            <?php if(defined('TITLE'))
+            {
+                print TITLE;
+            }else
+            {
+                print '常量调用失败';
+            }
+            ?>
+        </title>
+        <style type="text/css">
+            body
+            {
+                margin:0;
+                padding:0;
+                background:#f3f3f3;
+            }
+            #leftcontent
+            {
+                float:left;
+                width:67%;
+                boder-right:2px solid #000;
+                boder-bottom:2px solid #000;
+                margin-right:15px;
+                padding:20px;
+            }
+            p,h1,pre
+            {
+                margin:0 30px 10px 30px;   
+            }
+            h1
+            {
+                font-size:14px;
+                padding-top:10px;
+            }
+            #rightcontent p
+            {
+                font-size:14px;
+                margin-left:0px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="leftcontent">
+        <!--begin changeable content.-->
